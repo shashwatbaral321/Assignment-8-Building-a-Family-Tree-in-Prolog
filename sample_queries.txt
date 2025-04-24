@@ -1,0 +1,19 @@
+% Who are the children of john?
+?- parent(john, X).
+Expected Output: X = mary ; X = mike.
+
+% Who are the siblings of mary?
+?- sibling(mary, X).
+Expected Output: X = mike.
+
+% Who are john’s grandchildren?
+?- grandparent(john, X).
+Expected Output: X = alice ; X = emma.
+
+% Is alice a cousin of emma?
+?- cousin(alice, emma).
+Expected Output: true.
+
+% Who are the descendants of john?
+?- descendant(X, john).
+Expected Output: X = mary ; mike ; alice ; emma.
